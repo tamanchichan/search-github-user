@@ -15,7 +15,7 @@ function Search() {
     
     if (input.length > 0) {
       try {
-        const token = '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';
+        const token = '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';
         const options = {headers: { Authorization: `Bearer ${token}`}};
         const urlUser =  `https://api.github.com/users/${input}`;
         
