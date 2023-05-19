@@ -1,13 +1,145 @@
+/* html */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1f1f1f;
+  color: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  background-color: #0c5adb;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 2.5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+input {
+  border-radius: 5px;
+  height: 40px;
+  padding: 0px 10px;
+}
+
+input[type=text] {
+  width: 250px;
+}
+
+input[type=submit] {
+  background-color: #ee7525;
+  color: #fff;
+  font-size: 15px;
+  margin-left: 15px;
+  text-shadow: 0px 0px 2px #000;
+  text-transform: uppercase;
+}
+
+span.flex {
+  justify-content: space-between;
+}
+
+/* footer */
+footer {
+  height: 100px;
+}
+
+/* class */
+.button {
+  text-align: center;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(100% - 30px, 1080px);
+}
+
+.error {
+  color: #f00;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
+
+.img {
+  margin: 0 auto;
+}
+
+.info {
+  margin: 25px 0px;
+}
+
+.info + .info {
+  margin-left: 15px;
+}
+
+.info h3 {
+  font-weight: 400;
+  letter-spacing: 1.25px;
+}
+
+.info p {
+  text-align: center;
+}
+
+.my-repositories {
+  margin: 25px 0px;
+}
+
+.my-repositories h2 {
+  font-weight: 300;
+  letter-spacing: 2.5px;
+  margin-left: 40px;
+}
+
+.repository {
+  background-color: #353535;
+  border-radius: 5px;
+  margin: 25px 0px;
+  padding: 25px 40px;
+}
+
+.repository:hover {
+  box-shadow: 0px 0px 2px #fff;
+}
+
+.repository-name {
+  
+}
+
+.repository-update {
+  color: #a5a5a5;
+}
+
+.user {
+  display: grid;
+  margin-top: 50px;
+  place-content: center;
+}
+
+.user-name {
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  margin-top: 25px;
+  text-align: center;
 }
