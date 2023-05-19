@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate, useHref } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function User() {
   const [user, setUser] = useState(
