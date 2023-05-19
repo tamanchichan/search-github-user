@@ -15,12 +15,13 @@ function Search() {
     
     if (input.length > 0) {
       try {
-        const token = '';
-        const options = {headers: { Authorization: `Bearer ${token}`}};
+        // const token = '';
+        // const options = {headers: { Authorization: `Bearer ${token}`}};
         const urlUser =  `https://api.github.com/users/${input}`;
         
-        const response = await axios.get(urlUser, options);
-        if (response.status === 200) {
+        // const data = await axios.get(urlUser, options);
+        const data = await axios.get(urlUser);
+        if (data.status === 200) {
           setUser(input);
         }
       } catch (error) {

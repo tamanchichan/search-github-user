@@ -19,17 +19,18 @@ function User() {
   
   const { username } = useParams();
   
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   
-  const token = '';
-  const options = {headers: { Authorization: `Bearer ${token}`}};
+  // const token = '';
+  // const options = {headers: { Authorization: `Bearer ${token}`}};
   const urlUser =  `https://api.github.com/users/${username}`;
   const urlUserRepo = `https://api.github.com/users/${username}/repos`;
   
   useEffect(() => {
     const getUser = async () => {
       try {
-        const { data } = await axios.get(urlUser, options);
+        // const { data } = await axios.get(urlUser, options);
+        const { data } = await axios.get(urlUser);
         setUser({
           pfp: data.avatar_url,
           repositories: data.public_repos,
@@ -44,7 +45,8 @@ function User() {
     
     const getUserRepo = async () => {
       try {
-        const { data } = await axios.get(urlUserRepo, options);
+        // const { data } = await axios.get(urlUserRepo, options);
+        const { data } = await axios.get(urlUserRepo);
         const repositories = data.map(data => ({
           name: data.name,
           update: new Date(data.updated_at).toLocaleDateString('en-US', {
